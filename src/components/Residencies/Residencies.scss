@@ -1,0 +1,33 @@
+.r-head {
+    margin-bottom: 2rem;
+
+}
+
+.r-card {
+    gap: 0.6rem;
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: max-content;
+    margin: auto;
+    transition: all 0.2s ease-in;
+
+    &>img {
+        width: 100%;
+        max-width: 15rem;
+    }
+
+    &>:nth-child(2) {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    &>:nth-child(3) {
+        font-size: 1.5rem;
+        
+    }
+
+    &>:nth-child(4) {
+        font-size: 0.7rem;
+        
+    }
+}
