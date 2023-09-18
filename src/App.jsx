@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero";
 import "./App.scss"
 import Companies from "./components/Companies/Companies";
 import Residencies from "./components/Residencies/Residencies";
+import { Value } from "./components/Value/Value";
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
         <Hero/>
         <Companies />
         <Residencies />
+        <Value />
       </div>
       <span>Footer</span>
     </div>
