@@ -3,7 +3,7 @@ import "./Companies.scss"
 const Companies = () => {
   return (
     <div className='c-wrapper'>
-        <div className="paddings innerWidth flexCenter c-container">
+        <div className="paddings innerWidth flexCenter cp-container">
             <img src="./prologis.png" alt="" />
             <img src="./tower.png" alt="" />
             <img src="./equinix.png" alt="" />

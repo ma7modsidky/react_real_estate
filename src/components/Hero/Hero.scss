@@ -61,6 +61,7 @@
 .stats {
     width: 100%;
     justify-content: space-between;
+    gap: 1rem;
     margin: 1rem 0;
 
     .stat>:nth-child(1) {
@@ -75,8 +76,8 @@
 }
 // Right Side
 .image-container {
-    width: 30rem;
-    height: 35rem;
+    width: 25rem;
+    height: 30rem;
     overflow: hidden;
     border-radius: 15rem 15rem 0 0;
     border: 8px solid rgba(255,255,255,0.12);
@@ -87,4 +88,39 @@
     }
 }
 
+@media (max-width: 940px) {
+    .hero-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &>div {
+            width: 100%;
+        }
+        .image-container{
+            width: 80%;
+            margin: auto;
+            height: auto;
+    
+        }
+    }
+}
 
+@media (max-width: 640px) {
+    .hero-container{
+        padding-top: 4rem;
+    }
+    
+    .hero-title>h1{
+        font-size: 3.5rem;
+        line-height: 3rem;
+    }
+
+    .hero-right {
+        width: 100%;
+    }
+    
+    .stats {
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}

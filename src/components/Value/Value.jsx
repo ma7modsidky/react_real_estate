@@ -15,7 +15,6 @@ import "./Value.scss";
 import data from "../../utils/accordion";
 
 export const Value = () => {
-  
   return (
     <section className="v-wrapper">
       <div className="paddings innerWidth flexCenter v-container">
@@ -42,7 +41,7 @@ export const Value = () => {
             preExpanded={[0]}
           >
             {data.map((item, i) => {
-                const [className, setClassName] = useState(null);
+              let [className, setClassName] = useState(null);
               return (
                 <AccordionItem
                   className={`accordion-item ${className}`}
@@ -51,13 +50,15 @@ export const Value = () => {
                 >
                   <AccordionItemHeading>
                     <AccordionItemButton className="flexCenter accordion-button">
+
                       <AccordionItemState>
-                        {({ expanded }) => {
+                        {({ expanded }) =>
                           expanded
-                            ? setClassName("expanded")
-                            : setClassName("collapsed");
-                        }}
+                            ? setClassName(prev => "expanded")
+                            : setClassName(prev => "collapsed")
+                        }
                       </AccordionItemState>
+
                       <div className="flexCenter icon">{item.icon}</div>
                       <span className="primaryText">{item.heading}</span>
                       <div className="flecCenter icon">
